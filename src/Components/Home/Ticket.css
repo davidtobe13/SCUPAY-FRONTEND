@@ -1,0 +1,219 @@
+.ticket-body{
+    width: 100%;
+    height: 70vh;
+    margin-top: 80px;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ticket-holder{
+    width: 100%;
+    height: 90%;
+    margin-top: 80px;
+    background-color: #0F25A3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticket-left{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.ticket-left-img{
+    width: 75%;
+    height: 10%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ticket-left-img>img{
+    width: 30%;
+}
+
+.ticket-left-txt{
+    width: 75%;
+    height: 40%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+}
+.ticket-left-txt>h3{
+    font-size: 38px;
+    text-align: left;
+    color: white;
+}
+.ticket-left-txt>p{
+    font-size: 16px;
+    text-align: left;
+    color: white;
+}
+
+.ticket-right{
+    width: 50%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.ticket-right>img{
+    width: 95%;
+}
+
+.ticket-left-btn{
+    width: 75%;
+    height: 20%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.ticket-btn{
+    font-size: 16px;
+    color: #2F6FED;
+    border: none;
+    border-radius: 7px;
+    padding-block: 14px;
+    background-color: white;
+    padding-inline: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.ticket-btn:hover{
+    background-color: #2F6FED;
+    cursor: pointer;
+    color: white;
+}
+.boy1{
+    display: flex;
+}
+.boy2{
+    display: none;
+}
+
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .ticket-body{
+        width: 100%;
+        height: 80vh;
+        margin-top: 30px;
+        background: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 140px !important;
+
+    }
+    .ticket-holder {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column !important;
+        height: 100% !important; /* Adjust height to fit content */
+        padding: 0px !important; /* Add padding for better spacing */
+    }
+
+    .ticket-left-img{
+        display: none;
+    }
+    
+    .ticket-left {
+        width: 100%  !important;
+        height: 45% !important;
+        /* background-color: green; */
+        height: auto; /* Allow height to adjust */
+        justify-content: center; /* Center content */
+    }
+    /* .ticket-right {
+        width: 100%;
+        height: 40%;
+        background-color: green;
+        height: auto;
+        justify-content: center; 
+    } */
+
+    .boy1{
+        display: none;
+    }
+    .boy2{
+        display: flex;
+    }
+
+    .ticket-left-txt {
+        width: 80%; /* Use full width */
+        height: 100%;
+        text-align: left; /* Center text */
+        align-items: flex-start;
+        /* background-color: yellow; */
+    }
+
+    .ticket-left-txt > h3 {
+        font-size: 24px; /* Smaller font size for mobile */
+    }
+
+    .ticket-left-txt > p {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+
+    .ticket-left-btn {
+        width: 80%; /* Full width button */
+        justify-content: flex-start; /* Center button */
+    }
+
+    .ticket-btn {
+        width: 40%; /* Button takes up 80% width */
+    }
+
+    .ticket-right {
+        height: 55% !important;
+        width: 100% !important; /* Full width image */
+        margin-top: 20px; /* Space between sections */
+    }
+
+    .ticket-right > img {
+        width: 100%; /* Full width image */
+        height: 100%;
+    }
+}
+
+/* Tablet styles */
+@media (max-width: 1024px) {
+    .ticket-holder {
+        flex-direction: row;
+    }
+    
+    .ticket-left,
+    .ticket-right {
+        width: 50%; /* Keep split layout for tablet */
+        height: auto; /* Adjust height to fit content */
+    }
+
+    .ticket-left-txt > h3 {
+        font-size: 30px; /* Adjusted size for tablets */
+    }
+
+    .ticket-left-txt > p {
+        font-size: 16px; /* Keep same size as desktop */
+    }
+
+    .ticket-left-img > img {
+        width: 40%; /* Adjust image size */
+    }
+}

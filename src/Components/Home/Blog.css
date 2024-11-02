@@ -1,0 +1,270 @@
+.blog-body{
+    width: 100%;
+    height: 130vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.blog-top{
+    width: 60%;
+    height: 20%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    margin-bottom: -10px;
+}
+
+.blog-top>h4{
+    font-size: 22px;
+    font-weight: 500;
+    color: #2F6FED;
+}
+
+.blog-top>h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #1D2433;
+}
+
+.blog-top>p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #4A505C;
+}
+
+.blog-mid{
+    width: 100%;
+    height: 5%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.blog-mid>button{
+    padding-inline: 10px;
+    padding-block: 5px;
+    font-size: 14px;
+    border: 1px solid #E1E6EF;
+    border-radius: 5px;
+    transition: color 0.3 ease, background-color 0.3 ease;
+}
+
+.blog-mid>button:hover{
+    border: none;
+    color: white;
+    background-color: #2F6FED;
+    cursor: pointer;
+}
+
+.blog-down{
+    width: 90%;
+    height: 75%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blog-card-holder{
+    width: 90%;
+    height: 100%;
+    /* background-color: #F4F4F4; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    overflow-x: auto;
+}
+
+.blog-card{
+    width: 330px;
+    height: 400px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blog-card-img{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: pink; */
+}
+.blog-card-img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-card-txt{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+    /* background-color: orange; */
+}
+.blog-card-txt>h4{
+    font-size: 12px;
+    color: #4A505C;
+    font-weight: 400;
+}
+.blog-card-txt>p{
+    font-size: 16px;
+    color: #1D2433;
+    font-weight: 600;
+}
+
+.blog-card-btn{
+    width: 100%;
+    height: 8%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.blog-learn{
+    font-size: 14px;
+    color: #2F6FED;
+    border: none;
+    border-radius: 10px;
+    padding-block: 14px;
+    background: none;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    gap: 15px;
+}
+
+.blog-learn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.blog-learn>img{
+    width: 8px;
+}
+
+
+/* Base styles for smaller screens */
+@media (max-width: 768px) {
+
+    .blog-body{
+        margin-top: -70px;
+    }
+    .blog-mid {
+        margin-bottom: 30px;
+        margin-top: 10px;
+        flex-wrap: wrap; /* Allow buttons to wrap */
+        gap: 10px; /* Adjust gap for buttons */
+    }
+
+
+    .blog-top{
+        width: 100%;
+    }
+    
+    .blog-top>h1{
+        font-size: 28px;
+    }
+    
+    .blog-top>p{
+        font-size: 14px;
+    }
+
+.blog-card-holder{
+    width: 100%;
+    padding: 10px;
+    gap: 10px;
+}
+    .blog-card {
+        display: flex; /* Use flexbox for card layout */
+        flex-direction: row; /* Align image beside text */
+        align-items: center; /* Center items vertically */
+        height: auto; /* Let height adjust based on content */
+        padding: 10px; /* Add some padding */
+    }
+
+    .blog-card-img {
+        width: 40%; /* Make the image smaller */
+        height: 100%; /* Let height adjust based on aspect ratio */
+    }
+
+    .blog-card-img > img {
+        width: 100%; /* Ensure image fits within container */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Cover the area without distortion */
+    }
+
+    .blog-card-txt {
+        width: 60%; /* Allow text to take up remaining space */
+        gap: 5px;
+        text-align: left; /* Align text to the left */
+    }
+
+    .blog-card-btn {
+        display: none; /* Remove the button section */
+    }
+}
+
+/* Styles for tablets */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .blog-mid {
+        flex-wrap: wrap; /* Allow buttons to wrap */
+        gap: 20px; /* Adjust gap for buttons */
+    }
+
+    .blog-card {
+        display: flex; /* Use flexbox for card layout */
+        flex-direction: row; /* Align image beside text */
+        align-items: center; /* Center items vertically */
+        height: auto; /* Let height adjust based on content */
+        padding: 10px; /* Add some padding */
+    }
+
+    .blog-card-img {
+        width: 40%; /* Make the image smaller */
+        height: auto; /* Let height adjust based on aspect ratio */
+    }
+
+    .blog-card-img > img {
+        width: 100%; /* Ensure image fits within container */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Cover the area without distortion */
+    }
+
+    .blog-card-txt {
+        width: 60%; /* Allow text to take up remaining space */
+        text-align: left; /* Align text to the left */
+    }
+
+    .blog-card-btn {
+        display: none; /* Remove the button section */
+    }
+}

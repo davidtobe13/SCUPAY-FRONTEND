@@ -1,0 +1,224 @@
+.testimonial-body{
+    width: 100%;
+    height: 120vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    gap: 10px;
+}
+
+.testimonial-top{
+    width: 60%;
+    height: 30%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+.testimonial-top>h4{
+    font-size: 22px;
+    font-weight: 500;
+    color: #2F6FED;
+}
+.testimonial-top>h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #1D2433;
+}
+.testimonial-top>p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #4A505C;
+}
+
+
+.testimonial-down{
+    width: 80%;
+    height: 65%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 30px;
+}
+.testimonial-card-holder{
+    width: 82%;
+    height: 100%;
+    /* background-color: #F4F4F4; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.testimonial-card{
+    width: 420px;
+    height: 250px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    padding: 20px;
+    align-items: flex-start;
+    border: 1px solid #E1E6EF;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: border-top-right 0.5s ease-in-out;
+}
+
+.testimonial-card-img{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    /* background-color: red; */
+}
+.testimonial-card-img>img{
+    width: 20%;
+}
+
+.card-img{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    text-align: left;
+    /* background-color: green; */
+}
+
+.card-txt{
+    width: 85%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    /* background-color: yellow; */
+}
+.card-txt>h3{
+    font-size: 16px;
+    color: #1D2433;
+}
+.card-txt>p{
+    font-size: 13px;
+    color: #4A505C;
+}
+
+
+.testimonial-card-txt{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+
+.testimonial-card-txt>p{
+    font-size: 14px;
+    color: #4A505C;
+    line-height: 1.5;
+}
+
+.testimonial-card-star{
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    /* background-color: red; */
+}
+.testimonial-card-star>img{
+    width: 25%;
+}
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .testimonial-body {
+        height: auto; /* Allow height to adjust based on content */
+        padding: 20px; /* Add some padding for mobile */
+    }
+
+    .testimonial-top {
+        width: 90%; /* Use a larger percentage for smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .testimonial-top > h1 {
+        font-size: 28px; /* Decrease font size */
+    }
+
+    .testimonial-top > p {
+        font-size: 14px; /* Decrease font size */
+    }
+
+    .testimonial-down {
+        width: 100%; /* Full width */
+    }
+
+    .testimonial-card-holder {
+        flex-direction: column; /* Stack cards vertically */
+        width: 100%;
+        align-items: center; /* Center the cards */
+        gap: 20px; /* Reduce gap between cards */
+    }
+
+    .testimonial-card {
+        width: 90%; /* Full width for cards */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .testimonial-card-img > img {
+        width: 30%; /* Adjust image size */
+    }
+
+    .testimonial-card-star > img {
+        width: 20%; /* Adjust star image size */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .testimonial-body {
+        padding: 40px; /* Add some padding for tablets */
+    }
+
+    .testimonial-top {
+        width: 80%; /* Use a slightly smaller percentage */
+    }
+
+    .testimonial-top > h1 {
+        font-size: 32px; /* Adjust font size */
+    }
+
+    .testimonial-card-holder {
+        flex-direction: row; /* Keep cards in a row */
+        justify-content: space-between; /* Space cards out */
+        gap: 30px; /* Maintain gap */
+    }
+
+    .testimonial-card {
+        width: 45%; /* Adjust card width for tablets */
+    }
+}

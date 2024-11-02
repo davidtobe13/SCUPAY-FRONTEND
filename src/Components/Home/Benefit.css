@@ -1,0 +1,192 @@
+.benefit-body{
+    width: 100%;
+    height: 150vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.benefit-top{
+    width: 60%;
+    height: 20%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+}
+
+.benefit-top>h4{
+    font-size: 22px;
+    font-weight: 500;
+    color: #2F6FED;
+}
+.benefit-top>h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: #1D2433;
+}
+.benefit-top>p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #4A505C;
+}
+
+
+.benefit-down{
+    width: 90%;
+    height: 80%;
+    /* background-color: yellow; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.benefit-card-holder{
+    width: 90%;
+    height: 100%;
+    /* background-color: #F4F4F4; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.benefit-card{
+    width: 340px;
+    height: 400px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    padding: 20px;
+    align-items: flex-start;
+    border: 1px solid #E1E6EF;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: border-top-right 0.5s ease-in-out;
+}
+
+.benefit-card-img{
+    width: 80%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.benefit-card-img>img{
+    width: 20%;
+}
+
+.benefit-card-txt{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left;
+}
+.benefit-card-txt>h4{
+    font-size: 22px;
+    color: #1D2433;
+}
+.benefit-card-txt>p{
+    font-size: 16px;
+    color: #4A505C;
+}
+
+.benefit-card:hover{
+    border-top-right-radius: 100px;
+    background-color: #f9fbfc;
+}
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .benefit-body {
+        height: auto; /* Allow height to adjust based on content */
+        margin-top: 20px; /* Reduce top margin for smaller screens */
+        margin-bottom: 40px; /* Reduce bottom margin for smaller screens */
+        padding: 0 10px; /* Add side padding */
+    }
+
+    .benefit-top {
+        width: 100%; /* Full width on smaller screens */
+    }
+
+    .benefit-top > h1 {
+        font-size: 28px; /* Smaller font size */
+    }
+
+    .benefit-top > p {
+        font-size: 14px; /* Smaller font size */
+    }
+
+    .benefit-down {
+        width: 100%; /* Full width for the card section */
+    }
+
+    .benefit-card-holder {
+        width: 98%;
+        gap: 10px; /* Adjust gap between cards */
+        margin-top: 30px;
+    }
+
+    .benefit-card {
+        width: 47%; /* Full width for cards */
+        height: auto;
+    }
+
+    .benefit-card-img > img {
+        width: 20%; /* Adjust image size for cards */
+    }
+
+    .benefit-card-txt > h4 {
+        font-size: 16px; /* Smaller font size for card titles */
+    }
+
+    .benefit-card-txt > p {
+        font-size: 12px; /* Smaller font size for card descriptions */
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .benefit-body {
+        height: auto; /* Allow height to adjust based on content */
+        margin-top: 40px; /* Maintain some margin for tablets */
+    }
+
+    .benefit-top {
+        width: 80%; /* Adjust width for tablets */
+    }
+
+    .benefit-top > h1 {
+        font-size: 32px; /* Medium font size for tablets */
+    }
+
+    .benefit-card-holder {
+        flex-wrap: wrap; /* Allow wrapping on smaller tablets */
+        justify-content: space-between; /* Adjust spacing */
+        margin-top: 30px;
+    }
+
+    .benefit-card {
+        width: 45%; /* Adjust card width for tablets */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .benefit-card-img > img {
+        width: 25%; /* Adjust image size for tablets */
+    }
+}

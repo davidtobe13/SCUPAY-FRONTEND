@@ -1,0 +1,229 @@
+.option-body {
+    width: 100%;
+    height: 60vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.option-holder {
+    width: 50%;
+    height: 90%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center; /* Align items to the top */
+    justify-content: center;
+    flex-direction: column;
+    position: relative; /* Position for child elements */
+}
+
+.option-top {
+    width: 60%;
+    height: 12%;
+    background-color: #F0F5FF;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.option-top > button {
+    width: 130px;
+    height: 100%;
+    background: none;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    border: none;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.option-top > button:hover,
+.option-top > button.active {
+    background: #2F6FED; /* Same background as hover */
+    color: white; /* Same text color as hover */
+}
+
+/* Container for content sections */
+.option-down {
+    width: 70%;
+    height: 80%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* For positioning the content sections */
+}
+
+.option{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* background-color: purple; */
+    text-align: center;
+    gap: 10px;
+}
+
+.option>h4{
+    font-size: 40px;
+    color: #1D2433;
+    font-weight: 600;
+}
+.option>p{
+    font-size: 18px;
+    color: #4A505C;
+    font-weight: 400;
+}
+.option-btn{
+    width: 100%;
+    height: 30%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Styles for content sections */
+.option-student,
+.option-association,
+.option-school {
+    position: absolute; /* Position sections absolutely */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    left: 0; /* Align to the left */
+    top: 0; /* Align to the top */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.5s ease; /* Transition for fade effect */
+}
+
+.option-student.active,
+.option-association.active,
+.option-school.active {
+    opacity: 1; /* Make visible */
+    transition: opacity 0.5s ease; /* Same transition for active */
+}
+
+
+.option-create-acc,
+.option-create-acc1,
+.option-create-acc2{
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    padding-block: 14px;
+    background-color: #2F6FED;
+    padding-inline: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.option-create-acc:hover,
+.option-create-acc1:hover,
+.option-create-acc2:hover{
+    background-color: #0F25A3 !important;
+    cursor: pointer;
+}
+
+
+.option-learn,
+.option-learn1,
+.option-learn2{
+    font-size: 16px;
+    color: #2F6FED;
+    border: none;
+    border-radius: 10px;
+    padding-block: 14px;
+    background: none;
+    padding-inline: 10px;
+    display: flex;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease-in-out;
+    gap: 15px;
+}
+
+.option-learn:hover,
+.option-learn1:hover,
+.option-learn2:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+/* General adjustments for tablets and smaller devices */
+@media (max-width: 768px) {
+    .option-body{
+        margin-block: -70px;
+    }
+    .option-holder {
+        width: 90%; /* Increase width on smaller screens */
+        height: 80%; /* Allow height to adjust based on content */
+        padding: 10px; /* Add some padding */
+
+    }
+
+    .option-top {
+        height: 15%; /* Allow height to adjust based on content */
+        width: 90%;
+    }
+
+    .option-top > button {
+        width: 100%; /* Make buttons full width */
+        margin: 5px 0; /* Add some margin between buttons */
+    }
+
+    .option-down {
+        width: 100%; /* Full width for content */
+        height: 70%; /* Allow height to adjust */
+        gap: 10px;
+    }
+
+    .option {
+        width: 100%; /* Ensure options take full width */
+        height: auto; /* Adjust height */
+        padding: 20px; /* Add padding for content */
+    }
+
+    .option > h4 {
+        font-size: 28px; /* Smaller font size for headings */
+    }
+
+    .option > p {
+        font-size: 16px; /* Smaller font size for paragraphs */
+    }
+
+    .option-btn {
+        gap: 20px; /* Increase gap between buttons */
+        font-size: 13px;
+    }
+}
+
+/* Further adjustments for mobile devices */
+@media (max-width: 480px) {
+    .option-top > button {
+        font-size: 14px; /* Smaller font size for buttons */
+    }
+    .option-top {
+        height: 10%; /* Allow height to adjust based on content */
+        width: 90%;
+    }
+    .option > h4 {
+        font-size: 24px; /* Even smaller heading */
+    }
+
+    .option > p {
+        font-size: 14px; /* Smaller paragraph text */
+    }
+}
