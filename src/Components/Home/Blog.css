@@ -56,6 +56,7 @@
     padding-inline: 10px;
     padding-block: 5px;
     font-size: 14px;
+    background-color: #FDFBFF;
     border: 1px solid #E1E6EF;
     border-radius: 5px;
     transition: color 0.3 ease, background-color 0.3 ease;
@@ -176,7 +177,9 @@
 @media (max-width: 768px) {
 
     .blog-body{
-        margin-top: -70px;
+        margin-top: -40px;
+        margin-bottom: 30px;
+        height: auto;
     }
     .blog-mid {
         margin-bottom: 30px;
@@ -191,16 +194,23 @@
     }
     
     .blog-top>h1{
-        font-size: 28px;
+        font-size: 24px;
+    }
+    .blog-top>h4{
+        font-size: 18px;
     }
     
     .blog-top>p{
         font-size: 14px;
     }
+    .blog-down{
+        width: 100%;
+    }
 
 .blog-card-holder{
     width: 100%;
-    padding: 10px;
+    padding-inline: 0px;
+    padding-block: 10px;
     gap: 10px;
 }
     .blog-card {
@@ -208,22 +218,36 @@
         flex-direction: row; /* Align image beside text */
         align-items: center; /* Center items vertically */
         height: auto; /* Let height adjust based on content */
-        padding: 10px; /* Add some padding */
+        padding-block: 10px; /* Add some padding */
+        justify-content: space-between;
+        gap: 10px;
+        width: 90%;
+    }
+    
+    .blog-card-txt {
+        width: 67%;
+    }
+    .blog-card-txt > h4{
+        font-size: 12px;
+    }
+    .blog-card-txt >p{
+        font-size: 16px;
+        font-weight: 300;
     }
 
     .blog-card-img {
-        width: 40%; /* Make the image smaller */
+        width: 33%; /* Make the image smaller */
         height: 100%; /* Let height adjust based on aspect ratio */
     }
 
     .blog-card-img > img {
         width: 100%; /* Ensure image fits within container */
-        height: auto; /* Maintain aspect ratio */
+        height: 100%; /* Maintain aspect ratio */
         object-fit: cover; /* Cover the area without distortion */
     }
 
     .blog-card-txt {
-        width: 60%; /* Allow text to take up remaining space */
+        width: 70%; /* Allow text to take up remaining space */
         gap: 5px;
         text-align: left; /* Align text to the left */
     }

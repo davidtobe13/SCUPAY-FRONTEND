@@ -8,27 +8,27 @@ const Faq = () => {
   const faqData = [
     {
       question: "Is Scupay secure?",
-      answer: "Yes, Scupay employs industry-standard security measures to protect all transactions and user data. We use encryption protocols and maintain strict security standards to ensure your payments are safe and secure."
+      answer: "Scupay is a payment solution designed to simplify the collection of dues and fees for schools and student associations."
     },
     {
       question: "What types of payments can I make with Scupay?",
-      answer: "Scupay supports a wide range of payment types including tuition fees, school activities, cafeteria payments, and other educational expenses. Our platform is designed to handle both one-time and recurring payments."
+      answer: "Yes, Scupay prioritizes security with robust encryption and advanced security protocols to ensure that all transactions and data are protected."
     },
     {
       question: "How can schools get started with Scupay?",
-      answer: "Schools can get started by contacting our team for a demo and consultation. We'll guide you through the setup process, provide necessary training, and help integrate Scupay with your existing systems."
+      answer: "Schools and student associations unions can sign up on our website and follow the onboarding process to start collecting payments."
     },
     {
       question: "What payment methods are supported?",
-      answer: "We support multiple payment methods including credit cards, debit cards, bank transfers, and digital wallets. This ensures flexibility and convenience for all users."
+      answer: "Scupay supports bank transfers, mobile payments, and WhatsApp Pay. Check our website for a complete list of supported methods."
     },
     {
-      question: "What if I encounter issues while using Scupay?",
-      answer: "Our dedicated support team is available to help with any issues you might encounter. You can reach us through our help center, email support, or phone support during business hours."
+      question: " What if I encounter issues while using Scupay?",
+      answer: "If you experience any problems, our customer support team is here to help! Contact us through our support page for assistance."
     },
     {
       question: "Are there any fees associated with using Scupay?",
-      answer: "Fee structures vary depending on the type of service and payment method used. Please contact our sales team for detailed pricing information tailored to your institution's needs."
+      answer: "Please refer to our pricing page for detailed information about any applicable fees."
     }
   ];
 

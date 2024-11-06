@@ -106,32 +106,34 @@
     justify-content: center;
 }
 .hero-img-hold>img{
-    width: 70%;
+    width: 60%;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
     .hero-body {
-        margin-top: 60px;
-        height: auto; /* Allow the height to adjust based on content */
+        margin-top: 80px;
+        height: 100vh; /* Allow the height to adjust based on content */
         margin-bottom: -80px;
         padding-top: 15px; /* Reduce padding for smaller screens */
     }
     
     .hero-holder {
+        margin-top: 40px;
         height: auto; /* Adjust height for smaller screens */
         padding: 0 20px; /* Add some padding to the sides */
-        gap: 20px;
+        gap: 50px;
+        
     }
 
     .hero-up {
         width: 90%; /* Use more width on smaller screens */
-        gap: 10px; /* Reduce gap */
+        gap: 20px; /* Reduce gap */
 
     }
 
     .hero-up > h3 {
-        font-size: 36px; /* Smaller font size */
+        font-size: 38px; /* Smaller font size */
     }
 
     .hero-up > p {
@@ -150,11 +152,15 @@
 
     .hero-img-hold {
         height: 30%; /* Adjust image holder height */
+        position: relative;
     }
 
     .hero-img-hold > img {
-        width: 80%; /* Full width for image */
-        height: 100% /* Maintain aspect ratio */
+        width: 85%; /* Full width for image */
+        height: 250px ;/* Maintain aspect ratio */
+        position: absolute;
+        bottom: 20;
+        left: 30;
     }
 }
 

@@ -165,11 +165,14 @@
   }
 
   .faq-top>h1{
-    font-size: 28px;
+    font-size: 24px;
+  }
+  .faq-top>h4{
+    font-size: 18px;
   }
 
   .faq-top>p{
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .faq-container{

@@ -164,8 +164,11 @@
         height: auto; /* Allow height to adjust based on content */
     }
 
+    .testimonial-top > h4 {
+        font-size: 18px; /* Decrease font size */
+    }
     .testimonial-top > h1 {
-        font-size: 28px; /* Decrease font size */
+        font-size: 24px; /* Decrease font size */
     }
 
     .testimonial-top > p {

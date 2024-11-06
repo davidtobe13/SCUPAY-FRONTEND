@@ -125,7 +125,10 @@
     }
 
     .benefit-top > h1 {
-        font-size: 28px; /* Smaller font size */
+        font-size: 24px; /* Smaller font size */
+    }
+    .benefit-top > h4 {
+        font-size: 18px; /* Smaller font size */
     }
 
     .benefit-top > p {
@@ -140,11 +143,12 @@
         width: 98%;
         gap: 10px; /* Adjust gap between cards */
         margin-top: 30px;
+        flex-direction: column;
     }
 
     .benefit-card {
-        width: 47%; /* Full width for cards */
-        height: auto;
+        width: 80%; /* Full width for cards */
+        height: 370px;
     }
 
     .benefit-card-img > img {
@@ -152,11 +156,11 @@
     }
 
     .benefit-card-txt > h4 {
-        font-size: 16px; /* Smaller font size for card titles */
+        font-size: 20px; /* Smaller font size for card titles */
     }
 
     .benefit-card-txt > p {
-        font-size: 12px; /* Smaller font size for card descriptions */
+        font-size: 16px; /* Smaller font size for card descriptions */
     }
 }
 

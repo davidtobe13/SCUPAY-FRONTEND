@@ -124,7 +124,7 @@
     }
     .ticket-holder {
         align-items: center;
-        justify-content: center;
+        justify-content: space-between;
         flex-direction: column !important;
         height: 100% !important; /* Adjust height to fit content */
         padding: 0px !important; /* Add padding for better spacing */
@@ -182,7 +182,7 @@
     }
 
     .ticket-right {
-        height: 55% !important;
+        height: 50% !important;
         width: 100% !important; /* Full width image */
         margin-top: 20px; /* Space between sections */
     }
