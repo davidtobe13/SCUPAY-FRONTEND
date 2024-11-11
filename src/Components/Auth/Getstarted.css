@@ -349,13 +349,14 @@ svg{
     }
     .get-started {
       flex-direction: column;
-      padding: 20px;
+      /* padding: 20px; */
     }
 
     .get-started-logo-mobile{
         display: flex;
         width: 100%;
         height: 10%; 
+        padding: 20px;
         /* background-color: red;  */
     }
     .get-started-logo-mobile button{
@@ -388,6 +389,7 @@ svg{
       border: none;
       padding-block: 0;
       margin: 0;
+      padding-inline: 20px;
       /* background-color: red; */
       justify-content: space-between;
     }
@@ -443,6 +445,10 @@ svg{
         /* background-color: powderblue; */
     }
 
+    .get-started-input-hold>select{
+      font-weight: 300;
+    }
+
     .get-started-card-btn{
         /* background-color: blue; */
         height: 13%;
@@ -450,20 +456,22 @@ svg{
     .get-started-card-btn>button{
         height: 80%;
         width: 100%;
+        font-size: 14px;
+        font-weight: 300;
     }
   
     /* Adjust footer and SVGs for mobile view */
     .get-started-footer {
       height: 20%;
+      background: url("/public/foot.png");
     }
   
     .get-started-footer-inner {
       height: auto;
     }
 
-    .svg1{
-        padding-bottom: 7px;
-        width: 100%;
+    .svg1, svg{
+        display: none;
         /* height: 100%; */
     }
   
