@@ -384,7 +384,7 @@ svg{
       width: 90%;
       top: 10px;
       /* background-color: red; */
-      height: 110%;
+      height: 100%;
       border: none;
       padding-block: 0;
       margin: 0;
@@ -433,6 +433,7 @@ svg{
     .get-started-input-hold>select{
         width: 100%;
         height: 65%;
+        font-size: 12px;
     }
 
     .get-started-card-hold{
