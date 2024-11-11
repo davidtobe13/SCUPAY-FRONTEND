@@ -1,7 +1,15 @@
 import React, { useState } from 'react'
 import './Header.css'
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
+
+    const navigate = useNavigate();
+
+  const handleClick = () => {
+    // Navigate to '/start' when the button is clicked
+    navigate('/start');
+  };
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -28,7 +36,7 @@ const Header = () => {
                 </div>
                 <div className="header-right-auth">
                     <button className='header-signin-btn'>Sign in</button>
-                    <button className='header-signup-btn'>Get Started</button>
+                    <button className='header-signup-btn' onClick={handleClick}>Get Started</button>
                 </div>
             </div>
             {/* Mobile menu button - only visible on mobile */}

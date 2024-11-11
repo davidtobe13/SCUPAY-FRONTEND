@@ -157,7 +157,7 @@
 
     .hero-img-hold > img {
         width: 85%; /* Full width for image */
-        height: 250px ;/* Maintain aspect ratio */
+        height: 280px ;/* Maintain aspect ratio */
         position: absolute;
         bottom: 20;
         left: 30;
