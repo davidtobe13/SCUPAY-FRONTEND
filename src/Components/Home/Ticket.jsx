@@ -1,7 +1,15 @@
 import React from 'react'
 import './Ticket.css'
+import { useNavigate } from 'react-router-dom';
 
 const Ticket = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    // Navigate to '/start' when the button is clicked
+    navigate('/get-started');
+  };
   return (
     <div className="ticket-body">
         <div className="ticket-holder">
@@ -14,7 +22,7 @@ const Ticket = () => {
                 <p>Join over 10,000 students all over the world to embrace the <br/> simplicity, convenience, and ease of payments now.</p>
               </div>
               <div className="ticket-left-btn">
-              <button className='ticket-btn'>Get started</button>
+              <button className='ticket-btn' onClick={handleClick}>Get started</button>
               </div>
             </div>
             <div className="ticket-right">

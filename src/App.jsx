@@ -63,7 +63,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/start" element={<Getstarted />} />
+        <Route path="/get-started" element={<Getstarted />} />
       </Routes>
     </BrowserRouter>
   );

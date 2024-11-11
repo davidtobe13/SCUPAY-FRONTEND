@@ -8,7 +8,7 @@ const Header = () => {
 
   const handleClick = () => {
     // Navigate to '/start' when the button is clicked
-    navigate('/start');
+    navigate('/get-started');
   };
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -41,7 +41,7 @@ const Header = () => {
             </div>
             {/* Mobile menu button - only visible on mobile */}
             <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle menu">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A505C" strokeWidth="2" strokeLinecap="round">
+                {/* <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4A505C" strokeWidth="2" strokeLinecap="round">
                     {isMenuOpen ? (
                         <>
                             <line x1="18" y1="6" x2="6" y2="18" />
@@ -54,7 +54,8 @@ const Header = () => {
                             <line x1="3" y1="18" x2="21" y2="18" />
                         </>
                     )}
-                </svg>
+                </svg> */}
+                <img src="/menu.png" alt="" />
             </button>
 
             {/* Mobile menu - only visible when active */}
@@ -67,7 +68,7 @@ const Header = () => {
                 </nav>
                 <div className="header-mobile-auth">
                     <button className="header-signin-btn">Sign in</button>
-                    <button className="header-signup-btn">Get Started</button>
+                    <button className="header-signup-btn" onClick={handleClick}>Get Started</button>
                 </div>
             </div>
         </div>
