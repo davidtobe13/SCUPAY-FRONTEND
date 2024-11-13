@@ -127,17 +127,17 @@
     }
 
     .hero-up {
-        width: 90%; /* Use more width on smaller screens */
+        width: 100%; /* Use more width on smaller screens */
         gap: 20px; /* Reduce gap */
 
     }
 
     .hero-up > h3 {
-        font-size: 38px; /* Smaller font size */
+        font-size: 30px; /* Smaller font size */
     }
 
     .hero-up > p {
-        font-size: 16px; /* Smaller font size */
+        font-size: 14px; /* Smaller font size */
     }
 
     .hero-down {
