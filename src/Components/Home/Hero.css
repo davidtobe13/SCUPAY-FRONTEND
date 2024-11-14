@@ -112,14 +112,14 @@
 /* Mobile Styles */
 @media (max-width: 768px) {
     .hero-body {
-        margin-top: 80px;
-        height: 100vh; /* Allow the height to adjust based on content */
+        margin-top: 70px;
+        height: 80vh; /* Allow the height to adjust based on content */
         margin-bottom: -80px;
         padding-top: 15px; /* Reduce padding for smaller screens */
     }
     
     .hero-holder {
-        margin-top: 40px;
+        margin-top: 30px;
         height: auto; /* Adjust height for smaller screens */
         padding: 0 20px; /* Add some padding to the sides */
         gap: 50px;
@@ -128,12 +128,12 @@
 
     .hero-up {
         width: 100%; /* Use more width on smaller screens */
-        gap: 20px; /* Reduce gap */
+        gap: 10px; /* Reduce gap */
 
     }
 
     .hero-up > h3 {
-        font-size: 30px; /* Smaller font size */
+        font-size: 24px; /* Smaller font size */
     }
 
     .hero-up > p {
@@ -148,17 +148,19 @@
 
     .hero-create-acc, .hero-learn {
         width: 100%; /* Full width for buttons */
+        padding-block: 12px;
+        padding-inline: 4px;
     }
 
     .hero-img-hold {
-        height: 45%; /* Adjust image holder height */
+        height: 40%; /* Adjust image holder height */
         position: relative;
         margin-top: -20px;
     }
 
     .hero-img-hold > img {
         width: 85%; /* Full width for image */
-        height: 300px ;/* Maintain aspect ratio */
+        height: 270px ;/* Maintain aspect ratio */
         position: absolute;
         bottom: 20;
         left: 30;

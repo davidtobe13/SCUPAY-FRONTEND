@@ -10,6 +10,7 @@ const Header = () => {
     // Navigate to '/start' when the button is clicked
     navigate('/get-started');
   };
+
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -19,6 +20,11 @@ const Header = () => {
     // Close menu when clicking a navigation item
     const handleNavClick = () => {
         setIsMenuOpen(false);
+    };
+    const handleNavClick2 = () => {
+        setIsMenuOpen(false);
+        navigate('/auth/institution/create');
+
     };
 
     return (
@@ -30,7 +36,7 @@ const Header = () => {
             <div className="header-right">
                 <div className="header-right-nav">
                     <p onClick={handleNavClick}>Company</p>
-                    <p onClick={handleNavClick}>For Institutions</p>
+                    <p onClick={handleNavClick2}>For Institutions</p>
                     <p onClick={handleNavClick}>For Students</p>
                     <p onClick={handleNavClick}>Resources</p>
                 </div>
@@ -62,7 +68,7 @@ const Header = () => {
             <div className={`header-mobile-menu ${isMenuOpen ? 'active' : ''}`}>
                 <nav className="header-mobile-nav">
                     <p onClick={handleNavClick}>Company</p>
-                    <p onClick={handleNavClick}>For Institutions</p>
+                    <p onClick={handleNavClick2}>For Institutions</p>
                     <p onClick={handleNavClick}>For Students</p>
                     <p onClick={handleNavClick}>Resources</p>
                 </nav>

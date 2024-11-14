@@ -42,6 +42,7 @@ import { useState, useEffect } from "react";
 import Home from "./Components/Home/Home";
 import Getstarted from "./Components/Auth/Getstarted";
 import Loading from "./Components/Home/Loading";
+import CreateAcct from "./Components/Auth/Management-Auth/CreateAcct";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -64,6 +65,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/get-started" element={<Getstarted />} />
+        <Route path="/auth/institution/create" element={<CreateAcct/>} />
       </Routes>
     </BrowserRouter>
   );
