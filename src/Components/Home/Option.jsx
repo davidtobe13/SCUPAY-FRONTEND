@@ -1,7 +1,15 @@
 import React, { useState } from 'react';
 import './Option.css';
+import { useNavigate } from 'react-router-dom';
 
 const Option = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    // Navigate to '/start' when the button is clicked
+    navigate('/get-started');
+  };
   const [activeSection, setActiveSection] = useState("students");
 
   const handleButtonClick = (section) => {
@@ -38,7 +46,7 @@ const Option = () => {
           <p>Scupay makes paying school fees as easy as buying an airtime—just a WhatsApp chat away!</p>
           </div>
           <div className="option-btn">
-          <button className='option-create-acc'>Create account</button>
+          <button className='option-create-acc' onClick={handleClick}>Get started</button>
           <button className='option-learn'>Learn more <img  src="/chevron_right.png" alt="" /></button>
           </div>
         </div>
@@ -48,7 +56,7 @@ const Option = () => {
           <p>Scupay makes it easy for student unions to collect dues and simplifies event payments.</p>
           </div>
           <div className="option-btn">
-          <button className='option-create-acc1'>Create account</button>
+          <button className='option-create-acc1'  onClick={handleClick}>Get started</button>
           <button className='option-learn1'>Learn more <img  src="/chevron_right.png" alt="" /></button>
           </div>
         </div>
@@ -58,7 +66,7 @@ const Option = () => {
           <p>With Scupay, schools are now able to monitor and manage fee payment with ease.</p>
           </div>
           <div className="option-btn">
-          <button className='option-create-acc2'>Create account</button>
+          <button className='option-create-acc2'  onClick={handleClick}>Get started</button>
           <button className='option-learn2'>Learn more <img  src="/chevron_right.png" alt="" /></button>
           </div>
         </div>

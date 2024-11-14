@@ -1,10 +1,9 @@
-import { useState, useEffect } from 'react'
-import React from 'react'
-import './Getstarted.css'
+import {React, useState} from 'react'
 import { useNavigate } from 'react-router-dom';
+import "./CreateAcct.css"
 
-const Getstarted = () => {
-
+const CreateAcct = () => {
+  
     const [isModalOpen, setIsModalOpen] = useState(false);
 
 
@@ -27,11 +26,11 @@ const closeModal = () => {
     <div className='get-started' >
         <div className="get-started-body">
         <div className="get-started-logo-mobile">
-                    <button onClick={handleClick}> <img src="./xlogo.png" alt="" /></button>
+                    <button onClick={handleClick}> <img src="/xlogo.png" alt="" /></button>
                 </div>
             <div className="get-started-body-left">
                 <div className="get-started-logo">
-                    <button onClick={handleClick}> <img src="./xlogo.png" alt="" /></button>
+                    <button onClick={handleClick}> <img src="/xlogo.png" alt="" /></button>
                 </div>
                 <div className="get-started-left-down">
                     <h1>Why Scupay?</h1>
@@ -129,4 +128,4 @@ const closeModal = () => {
   )
 }
 
-export default Getstarted
+export default CreateAcct
