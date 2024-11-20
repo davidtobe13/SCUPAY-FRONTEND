@@ -1,4 +1,9 @@
-.sch-signup{
+*{
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+.sch-signin{
     width: 100%;
     height: 100vh;
     /* background-color: red; */
@@ -8,11 +13,7 @@
     flex-direction: column;
 }
 
-.sch-signin-mheader{
-    display: none;
-}
-
-.sch-signup-header{
+.sch-signin-header{
     height: 10%;
     width: 85%;
     /* background-color: red; */
@@ -22,12 +23,12 @@
 }
 
 
-.sch-signup-header>button{
+.sch-signin-header>button{
     border: none;
     background: none;
 }
 
-.sch-signup-header-nav{
+.sch-signin-header-nav{
     width: 85%;
     height: 100%;
     display: flex;
@@ -39,7 +40,7 @@
     gap: 30px;
     
 }
-.sch-signup-header-nav>button{
+.sch-signin-header-nav>button{
     background: none;
     border: none;
     padding-block:5px;
@@ -49,20 +50,69 @@
     /* background-color: red; */
 }
 
-.sch-signup-header-nav>button{
+.sch-signin-header-nav>button{
     font-size: 14px;
     font-weight: 400;
     transition: transform 0.1s ease-in-out, color 0.1s ease-in-out, border-bottom 0.1s ease-in-out;
 }
-.sch-signup-header-nav>button:hover,
-.sch-signup-header-nav>button.active{
+.sch-signin-header-nav>button:hover,
+.sch-signin-header-nav>button.active{
     border-bottom: 3px solid #2F6FED;
     color: #2F6FED !important;
     cursor: pointer;
 }
 
 
-.sch-signup-body{
+.sch-signin-mheader>button{
+    border: none;
+    background: none;
+    width: 10%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.sch-signin-mheader>button>img{
+    width: 100%;
+}
+.sch-signin-mheader-nav{
+    width: 90%;
+    height: 100%;
+    display: flex;
+    /* background-color: green; */
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 30px;
+    
+}
+.sch-signin-mheader-nav>button{
+    background: none;
+    border: none;
+    padding-block:5px;
+    margin: 0;
+    padding-inline: 0px;
+    color: #4A505C;
+    /* background-color: red; */
+}
+
+.sch-signin-mheader-nav>button{
+    font-size: 14px;
+    font-weight: 400;
+    transition: transform 0.1s ease-in-out, color 0.1s ease-in-out, border-bottom 0.1s ease-in-out;
+}
+.sch-signin-mheader-nav>button:hover,
+.sch-signin-mheader-nav>button.active{
+    border-bottom: 3px solid #2F6FED;
+    color: #2F6FED !important;
+    cursor: pointer;
+}
+
+.sch-signin-mheader{
+    display: none;
+}
+
+.sch-signin-body{
     height: 85%;
     width: 100%;
     /* background-color: green; */
@@ -71,7 +121,7 @@
     justify-content: center;
 }
 
-.sch-signup-body-left{
+.sch-signin-body-left{
     width: 40%;
     height: 100%;
     padding-left: 20px;
@@ -82,7 +132,7 @@
     flex-direction: column;
 }
 
-.sch-signup-logo{
+.sch-signin-logo{
     width: 100%;
     height: 5%;
     /* background-color: purple; */
@@ -91,17 +141,17 @@
     justify-content: flex-start;
 }
 
-.sch-signup-logo>button{
+.sch-signin-logo>button{
     background: none;
     border: none;
 }
-.sch-signup-logo>button>img{
+.sch-signin-logo>button>img{
     cursor: pointer;
 
 }
 
 
-.sch-signup-left-down{
+.sch-signin-left-down{
     width: 100%;
     height: 70%;
     /* background-color: yellowgreen; */
@@ -111,20 +161,20 @@
     flex-direction: column;
 }
 
-.sch-signup-left-down>h1{
+.sch-signin-left-down>h1{
    color: #1D2433;
    font-size: 40px;
 }
-.sch-signup-left-down h4{
+.sch-signin-left-down h4{
    color: #1D2433;
    font-size: 14px;
 }
-.sch-signup-left-down p{
+.sch-signin-left-down p{
    color: #4A505C;
    font-size: 12px;
 }
 
-.sch-signup-left-hold{
+.sch-signin-left-hold{
     width: 100%;
     height: 80%;
     /* background-color: brown; */
@@ -134,7 +184,7 @@
     flex-direction: column;
 }
 
-.sch-signup-left-hold-body{
+.sch-signin-left-hold-body{
     width: 70%;
     height: 30%;
     /* background-color: pink; */
@@ -144,7 +194,7 @@
     gap: 10px;
 }
 
-.sch-signup-left-img{
+.sch-signin-left-img{
     width: 100%;
     height: 40%;
     /* background-color: purple; */
@@ -154,11 +204,11 @@
     gap: 5px;
 }
 
-.sch-signup-left-img>img{
+.sch-signin-left-img>img{
     width: 4%;
 }
 
-.sch-signup-body-right{
+.sch-signin-body-right{
     width: 45%;
     height: 100%;
     display: flex;
@@ -168,7 +218,7 @@
     position: relative;
 }
        
-.sch-signup-card{
+.sch-signin-card{
     height: 102%;
     width: 62%;
     border: 1px solid #E1E6EF;
@@ -180,53 +230,94 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-top: 30px;
     z-index: 999;
 }
 
-.sch-signup-card-up{
+.sch-signin-card-up{
     width: 80%;
     height: 10%;
     /* background-color: pink; */
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
     flex-direction: column;
     gap: 2px;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
 }
 
-.sch-signup-card-up>h5{
+.sch-signin-card-up>h5{
     color: #1D2433;
     font-size: 22px;
 }
 
-.sch-signup-card-up>p{
+.sch-signin-card-up>p{
     color: #4A505C;
     font-size: 10px;
     text-align: center;
 }
 
-.sch-signup-card-body{
+.sch-signin-card-body{
     width: 100%;
     height: 54%;
     /* background-color: green; */
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
 }
 
-.sch-signup-card-hold{
+.sch-signin-card-hold{
     width: 100%;
     height: 88% ;
     /* background-color: purple; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-direction: column;
+    padding-top: 10px;
 }
 
-.sch-signup-input-hold{
+.sch-signin-remember{
+    width: 88%;
+    height: 25%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-top: 6px;
+    margin-bottom: -50px;
+}
+
+.sch-signin-remember-left{
+    width: 100%;
+    height: 20%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 11px;
+    color: #4A505C;
+    gap: 5px;
+}
+.sch-signin-remember-left>input{
+    width: 12px;
+}
+
+.sch-signin-remember-right{
+    width: 100%;
+    height: 20%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 11px;
+    font-weight: 400;
+    color: #2F6FED;
+}
+
+.sch-signin-input-hold{
     width: 88%;
     height: 34%;
     /* background-color: pink; */
@@ -237,8 +328,9 @@
     gap: 5px;
 }
 
-.sch-signup-input-hold>input,
-.sch-signup-input-hold>select{
+.sch-signin-input-hold>input,
+.passwordHolder,
+.sch-signin-input-hold>select{
     width: 100%;
     height: 50%;
     background: none;
@@ -249,42 +341,126 @@
     color: #4A505C;
     font-weight: 100;
 }
-
-.sch-signup-input-hold>select:focus,
-.sch-signup-input-hold>input:focus{
-        outline: none;
+.passwordHolder>input{
+    border: none;
+    width: 90%;
+    background: none;
+    height: 100%;
+    font-size: 10px;
+    color: #4A505C;
 }
 
-.sch-signup-input-hold>input::placeholder{
+.passwordHolder>button{
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    padding: 0;
+    position: relative;
+    padding-bottom: -40px;
+    width: 10%;
+    height: 70%;
+}
+.passwordHolder{
+    display: flex;
+    align-items: space-between;
+}
+
+
+.sch-signin-input-hold>select:focus,
+.sch-signin-input-hold>input:focus,
+ .passwordHolder>input:focus{
+        outline: none;
+        background: none;
+}
+
+.sch-signin-input-hold>input::placeholder{
     font-size: 10px;
     color: #4A505C;
     font-weight: 100;
 }
 
 
-.sch-signup-input-hold>select{
+.sch-signin-input-hold>select{
     font-size: 10px;
     color: #4A505C;
     font-weight: 100;
     padding-left: 10px;
 }
 
-.sch-signup-input-hold>label{
+.sch-signin-input-hold>label{
     color:#1D2433;
     font-size: 12px;
 }
 
-.sch-signup-card-btn{
+
+
+/* 
+
+.password-input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-input-container input {
+    flex: 1;
+    padding-right: 40px;
+  }
+  
+  .peek-eye {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .sch-signin-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .remember-me input {
+    cursor: pointer;
+  }
+  
+  .forgot-password {
+    color: #007BFF;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+  }
+  
+  .forgot-password:hover {
+    text-decoration: none;
+  }
+   */
+
+.sch-signin-card-btn{
     width: 100%;
     height:24% ;
     /* background-color: orange; */
     display: flex;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
     
 }
 
-.sch-signup-card-btn>button{
+.sch-signin-card-btn>button{
     width: 88%;
     padding-block: 12px;
     background-color: #1D5BD6;
@@ -296,17 +472,18 @@
     transition: background-color 0.3s ease-in-out;
 }
 
-.sch-signup-card-btn>button:hover{
+.sch-signin-card-btn>button:hover{
     background-color: #0F25A3;
     cursor: pointer;
 }
 
-.sch-signup-card-lower{
+.sch-signin-card-lower{
     height: 27%;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    gap: 10px;
     flex-direction: column;
 }
 
@@ -361,15 +538,15 @@
     cursor: pointer;
 }
 
-.sch-signup-card-sub>p{
+.sch-signin-card-sub>p{
     font-size: 12px;
     color: #4A505C;
 }
-.sch-signup-card-sub>p>span{
+.sch-signin-card-sub>p>span{
     font-size: 12px;
     color: #2F6FED;
 }
-.sch-signup-card-sub>p>span:hover{
+.sch-signin-card-sub>p>span:hover{
     color: #0F25A3;
     cursor: pointer;
 }
@@ -430,12 +607,12 @@
     cursor: pointer;
 }
 
-.sch-signup-logo-mobile{
+.sch-signin-logo-mobile{
     display: none;
 }
 
 
-.sch-signup-footer{
+.sch-signin-footer{
     height: 15%;
     width: 100%;
     /* background-color: #F0F5FF; */
@@ -445,7 +622,7 @@
     position: relative;
 }
 
-.sch-signup-footer-inner{
+.sch-signin-footer-inner{
     width: 100%;
     height: 60%;
     position: relative;
@@ -473,45 +650,60 @@ svg{
 /* Base styles for mobile devices */
 @media (max-width: 768px) {
 
-    .sch-signup-body{
+    .sch-signin-body{
         flex-direction: column;
     }
-    .sch-signup {
+    .sch-signin {
       flex-direction: column;
       /* padding: 20px; */
     }
 
-    .sch-signup-logo-mobile{
+    .sch-signin-header{
+        display: none;
+    }
+
+    .sch-signin-mheader{
+        height: 10%;
+        width: 90%;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+
+
+    .sch-signin-logo-mobile{
         display: flex;
         width: 100%;
         height: 10%; 
         padding: 20px;
         /* background-color: red;  */
     }
-    .sch-signup-logo-mobile button{
+    .sch-signin-logo-mobile button{
         border: none;
         background: none;
     }
+
+
   
     /* Hide the left side content */
-    .sch-signup-body-left {
+    .sch-signin-body-left {
       display: none;
     }
   
     /* Adjust the right side to take up full width */
-    .sch-signup-body-right {
+    .sch-signin-body-right {
       width: 100%;
       padding: 0 20px;
       
     }
   
     /* Center logo and card */
-    .sch-signup-logo {
+    .sch-signin-logo {
       justify-content: center;
       padding: 20px 0;
     }
   
-    .sch-signup-card {
+    .sch-signin-card {
       width: 90%;
       top: 10px;
       /* background-color: red; */
@@ -525,15 +717,7 @@ svg{
       align-items: flex-start;
     }
 
-    .sch-signin-mheader{
-        display: flex;
-    }
-
-    .sch-signup-header{
-        display: none;
-    }
-
-    .sch-signup-card-up{
+    .sch-signin-card-up{
         align-items: flex-start;
       justify-content: flex-start;
       margin-block: 10px;
@@ -544,16 +728,18 @@ svg{
       height: 10%;
       width: 95%;
     }
+    
+ 
 
-    .sch-signup-card-up h5{
+    .sch-signin-card-up h5{
         font-size: 24px;
     }
-    .sch-signup-card-up p{
+    .sch-signin-card-up p{
         font-size: 12px;
         text-align: left;
     }
 
-    .sch-signup-card-body{
+    .sch-signin-card-body{
         height: 100%;
         height: auto;
         margin-top: 0;
@@ -561,61 +747,101 @@ svg{
         /* background-color: red; */
         gap: 20px;
     }
-    .sch-signup-input-hold{
+    .sch-signin-input-hold{
         width: 100%;
         flex-direction: column;
         height: 80%;
         gap: 5px;
         /* background-color: pink; */
     }
-    .sch-signup-input-hold>label{
+    .sch-signin-input-hold>label{
         font-size: 14px;
     }
 
-    .sch-signup-input-hold>input{
+    .sch-signin-input-hold>input{
         font-size: 12px;
     }
-    .sch-signup-input-hold>input::placeholder{
+    .sch-signin-input-hold>input::placeholder{
+        font-size: 12px;
+    }
+    .passwordHolder{
+        width: 100%;
+        height: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .passwordHolder>input{
+        width: 90%;
+        padding-block: 13px;
+        /* background: red; */
+        font-size: 12px;
+    }
+    .passwordHolder>button{
+        width: 10%;
+        /* background: red; */
+    }
+
+
+    .sch-signin-input-hold>input,
+    .sch-signin-input-hold>select{
+        width: 100%;
+        padding-block: 20px;
         font-size: 12px;
     }
 
-    .sch-signup-input-hold>input,
-    .sch-signup-input-hold>select{
+    .sch-signin-card-hold{
         width: 100%;
-        padding-block: 24px;
-        font-size: 12px;
-    }
-
-    .sch-signup-card-hold{
-        width: 100%;
-        height: 80%;
+        height: 90%;
         gap: 5px;
+        margin-top: 10px;
         /* background-color: powderblue; */
     }
 
-    .sch-signup-input-hold>select{
-      font-weight: 300;
+    .sch-signin-remember{
+        display: flex;
+        width: 100%;
+        height: 25%;
+        /* background-color: red; */
+        position: relative;
+        padding-block: 5px;
+        margin-bottom: 3px;
+        gap: 10px;
     }
 
-    .sch-signup-card-btn{
+    .sch-signin-card-btn{
         /* background-color: blue; */
+        margin-top: -15px;
+        padding: 0;
         height: auto;
     }
     .linediv,
     .google-auth-btn{
         width: 100%;
     }
+
+    .sch-signin-card-lower{
+        gap: 16px;
+    }
     
-    .sch-signup-card-btn>button,
+    .sch-signin-card-btn>button,
     .google-auth-btn>button{
-        padding-block: 17px;
+        padding-block: 13px;
         width: 100%;
         font-size: 14px;
         font-weight: 300;
     }
+    .peek-eye{
+        padding-bottom: 30px;
+        height: 70%;
+    }
+    .passwordHolder .peek-eye svg {
+        display: block;
+        color: #666;
+      }    
   
     /* Adjust footer and SVGs for mobile view */
-    .sch-signup-footer {
+    .sch-signin-footer {
       height: 20%;
       background: url("/public/foot.png");
       object-fit: contain;
@@ -623,7 +849,7 @@ svg{
       width: 100%;
     }
   
-    .sch-signup-footer-inner {
+    .sch-signin-footer-inner {
       height: auto;
     }
 
@@ -636,7 +862,7 @@ svg{
   
   /* Smaller mobile devices (e.g., 480px width) */
   @media (max-width: 480px) {
-    .sch-signup-card {
+    .sch-signin-card {
       width: 100%;
     }
     

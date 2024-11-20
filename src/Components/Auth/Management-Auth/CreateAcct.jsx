@@ -1,14 +1,19 @@
 import {React, useState} from 'react'
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import "./CreateAcct.css"
 
 const CreateAcct = () => {
   
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-
+    const location = useLocation()
     const navigate = useNavigate();
 
+  const handleSignin = () => {
+    // Navigate to '/start' when the button is clicked
+    navigate('/auth/institution/signin');
+  };
   const handleClick = () => {
     // Navigate to '/start' when the button is clicked
     navigate('/');
@@ -18,90 +23,135 @@ const CreateAcct = () => {
     setIsModalOpen(true); // Show the modal
 };
 
+const handleNavClick2 = () => {
+    setIsMenuOpen(false);
+    navigate('/auth/institution/signup');
+
+};
+const handleNavClick1 = () => {
+    setIsMenuOpen(false);
+    navigate('/auth/student/signup');
+
+};
+
 const closeModal = () => {
     setIsModalOpen(false); // Hide the modal
 };
 
   return (
-    <div className='get-started' >
-        <div className="get-started-body">
-        <div className="get-started-logo-mobile">
+    <div className='sch-signup' >
+        
+        <div className="sch-signup-header">
                     <button onClick={handleClick}> <img src="/xlogo.png" alt="" /></button>
+                    <div className='sch-signup-header-nav'>
+                    <button className={location.pathname === '/auth/institution/signup' ? 'active' : ''} onClick={handleNavClick2}>
+                    <p>For Institutions</p>
+                    </button>
+                    <button className={location.pathname === '/auth/student/signup' ? 'active' : ''} onClick={handleNavClick1}>
+                    <p>For Students</p>
+                    </button>
+                    </div>
                 </div>
-            <div className="get-started-body-left">
-                <div className="get-started-logo">
+
+                <div className="sch-signin-mheader">
+            {/* <div className="signin-head-logo"></div> */}
+            <button onClick={handleClick}> <img src="/scupaylogo.png" alt="" /></button>
+            <div className='sch-signin-mheader-nav'>
+                <button 
+                    className={location.pathname === '/auth/institution/signup' ? 'active' : ''} 
+                    onClick={handleNavClick2}
+                >
+                    <p>For Institutions</p>
+                </button>
+                <button 
+                    className={location.pathname === '/auth/student/signup' ? 'active' : ''} 
+                    onClick={handleNavClick1}
+                >
+                    <p>For Students</p>
+                </button>
+            </div>
+        </div>
+        <div className="sch-signup-body">
+        {/* <div className="sch-signup-logo-mobile">
                     <button onClick={handleClick}> <img src="/xlogo.png" alt="" /></button>
+                </div> */}
+                
+            <div className="sch-signup-body-left">
+                <div className="sch-signup-logo">
+                    {/* <button onClick={handleClick}> <img src="/xlogo.png" alt="" /></button> */}
                 </div>
-                <div className="get-started-left-down">
-                    <h1>Why Scupay?</h1>
-                    <div className="get-started-left-hold">
-                        <div className="get-started-left-hold-body">
-                            <div className="get-started-left-img">
+                <div className="sch-signup-left-down">
+                    <h1>For management</h1>
+                    <div className="sch-signup-left-hold">
+                        <div className="sch-signup-left-hold-body">
+                            <div className="sch-signup-left-img">
                                 <img src="/check_circle.png" alt="" />
                                 <h4>Goodbye to manual payment processing</h4>
                             </div>
-                            <div className="get-started-left-txt">
+                            <div className="sch-signup-left-txt">
                                 <p>Schools can get real-time notifications and automated tracking of payments</p>
                             </div>
                         </div>
-                        <div className="get-started-left-hold-body">
-                            <div className="get-started-left-img">
+                        <div className="sch-signup-left-hold-body">
+                            <div className="sch-signup-left-img">
                                 <img src="/check_circle.png" alt="" />
                                 <h4>Centralized payment management</h4>
                             </div>
-                            <div className="get-started-left-txt">
+                            <div className="sch-signup-left-txt">
                                 <p>Admins can manage all payment channels from a single dashboard</p>
                             </div>
                         </div>
-                        <div className="get-started-left-hold-body">
-                            <div className="get-started-left-img">
+                        <div className="sch-signup-left-hold-body">
+                            <div className="sch-signup-left-img">
                                 <img src="/check_circle.png" alt="" />
                                 <h4>Secure transactions</h4>
                             </div>
-                            <div className="get-started-left-txt">
+                            <div className="sch-signup-left-txt">
                                 <p>Trust in our robust security to keep all payment data encrypted and safe</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div className="get-started-body-right">
-                <div className="get-started-card">
-                    <div className="get-started-card-up">
-                        <h5>Get started</h5>
-                        <p>Join our waitlist and simplify your school payments with ease</p>
+            <div className="sch-signup-body-right">
+                <div className="sch-signup-card">
+                    <div className="sch-signup-card-up">
+                        <h5>Create a Scupay account </h5>
+                        <p>Join over 100 schools and associations already streamlining their payment processes with Scupay</p>
                     </div>
-                    <div className="get-started-card-body">
-                        <div className="get-started-card-hold">
-                            <div className="get-started-input-hold">
-                                <label>Full name</label>
-                                <input type="text" placeholder='Enter full name' />
-                            </div>
-                            <div className="get-started-input-hold">
+                    <div className="sch-signup-card-body">
+                        <div className="sch-signup-card-hold">
+                            <div className="sch-signup-input-hold">
                                 <label>Email</label>
                                 <input type="text" placeholder='Enter email address' />
                             </div>
-                            <div className="get-started-input-hold">
+                            <div className="sch-signup-input-hold">
+                                <label>School</label>
+                                <input type="text" placeholder='Enter correct school name' />
+                            </div>
+                            <div className="sch-signup-input-hold">
                                 <label>Phone No.</label>
                                 <input type="text" placeholder='Enter phone number' />
                             </div>
-                            <div className="get-started-input-hold">
-                                <label>School/Institution name</label>
-                                <input type="text" placeholder='Enter name of school or association' />
-                            </div>
-                            <div className="get-started-input-hold">
-                                <label>Role</label>
-                                <select>
-                                    {/* <option value="">Select Role</option> */}
-                                    <option value="administrator">Administrator</option>
-                                    <option value="student">Student</option>
-                                </select>
-                                {/* <input type="option" placeholder='Enter full name' /> */}
-                            </div>
                         </div>
-                        <div className="get-started-card-btn">
-                            <button onClick={handleJoinWaitlistClick}>Join the Waitlist</button>
+                        <div className="sch-signup-card-btn">
+                            <button onClick={handleJoinWaitlistClick}>Verify your email</button>
                         </div>
+                    </div>
+                    <div className='sch-signup-card-lower'>
+                        <div className='linediv'>
+                            <div className='line'></div>
+                            <p>OR</p>
+                            <div className='line'></div>
+                        </div>
+                        <div className="google-auth-btn">
+                            <button onClick={handleJoinWaitlistClick}>
+                               <img src="/google.png" alt="" />Sign up with Google</button>
+                        </div>
+                        <div className="sch-signup-card-sub">
+                            <p>Already have a Scupay account? <span onClick={handleSignin}> Sign in</span></p>
+                        </div>
+        
                     </div>
                 </div>
             </div>
@@ -117,9 +167,9 @@ const closeModal = () => {
                 </div>
             )}
 
-        <div className="get-started-footer">
+        <div className="sch-signup-footer">
         <svg className='svg1' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" ><path fill="#F0F5FF" fill-opacity="1" d="M0,256L120,240C240,224,480,192,720,181.3C960,171,1200,181,1320,186.7L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z" ></path></svg>
-        <div className="get-started-footer-inner">
+        <div className="sch-signup-footer-inner">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" ><path fill="#1D5BD6" fill-opacity="1" d="M0,256L120,240C240,224,480,192,720,181.3C960,171,1200,181,1320,186.7L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z" ></path></svg>
             </div>
 

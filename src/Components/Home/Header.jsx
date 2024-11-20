@@ -23,7 +23,7 @@ const Header = () => {
     };
     const handleNavClick2 = () => {
         setIsMenuOpen(false);
-        navigate('/auth/institution/create');
+        navigate('/auth/institution/signup');
 
     };
 
