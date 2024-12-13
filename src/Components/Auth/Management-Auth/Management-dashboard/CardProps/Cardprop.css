@@ -1,0 +1,143 @@
+/* 
+.card-body{
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card {
+    width: 220px;
+    height: 130px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    padding: 13px;
+    
+  }
+  
+
+  .topcard{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  .card-image{
+    margin-bottom: -4px;
+  }
+
+  .card-header{
+    font-size: 14px;
+    font-weight: 100;
+    color: #4A505C;
+  }
+
+  .bottomcard{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .card-number{
+    color: #1D2433;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .card-footer{
+    width: 70%;
+    height: 100%;
+    color: #1fb31f;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    margin-left: 30px;
+  }
+  .card-footer > p{
+    font-size: 12px;
+    color: #4A505C;
+  } */
+
+  .card-body {
+    width: 100%;
+    height: 100vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+  }
+  
+  .topcard {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  
+  .card-image {
+    margin-bottom: -4px;
+  }
+  
+  .card-header {
+    font-size: 14px;
+    font-weight: 100;
+    color: #4a505c;
+  }
+  
+  .bottomcard {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  
+  .card-number {
+    color: #1d2433;
+    font-size: 28px;
+    font-weight: 500;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    /* background-color: green; */
+  }
+  
+  .card-footer {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    /* background-color: RED; */
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: relative;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    gap: 10px;
+  }
+  .card-footer > p {
+    font-size: 11px;
+    color: #4A505C;
+  }
