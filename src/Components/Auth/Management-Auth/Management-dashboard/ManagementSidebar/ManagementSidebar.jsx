@@ -83,7 +83,7 @@ const ManagementSidebar = ({ isCollapsed, setIsCollapsed }) => {
       <div className="logo-container">
         <img
           src={isCollapsed ? "/scupaylogo.png" : "/xlogo.png"}
-          alt="Company Logoss"
+          alt="Company Logo"
           className="logo"
         />
       </div>
@@ -93,9 +93,9 @@ const ManagementSidebar = ({ isCollapsed, setIsCollapsed }) => {
         onClick={() => setIsCollapsed(!isCollapsed)}
       >
         {isCollapsed ? (
-          <FaChevronCircleLeft size={20} color="#2F6FED" />
-        ) : (
           <FaChevronCircleRight size={20} color="#2F6FED" />
+        ) : (
+          <FaChevronCircleLeft size={20} color="#2F6FED" />
         )}
       </button>
 
