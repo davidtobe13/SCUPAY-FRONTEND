@@ -358,7 +358,7 @@ const CreateAcct = () => {
                             <p>Join over 100 schools and associations already streamlining their payment processes with Scupay</p>
                         </div>
 
-                        {error && (
+                        {/* {error && (
                             <div style={{
                                 color: 'red', 
                                 padding: '10px', 
@@ -368,7 +368,7 @@ const CreateAcct = () => {
                             }}>
                                 {error}
                             </div>
-                        )}
+                        )} */}
 
                         <div className="sch-signup-card-body">
                             <div className="sch-signup-card-hold">
